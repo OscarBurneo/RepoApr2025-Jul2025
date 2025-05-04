@@ -1,5 +1,3 @@
-
-
 import Librerias.All.Metodos;
 
 public class FileEjem {
