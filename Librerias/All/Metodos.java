@@ -130,8 +130,7 @@ public class Metodos {
     public void escribirFile(){
         try {
         sc.nextLine();
-        FileWriter write=new FileWriter(Fl,true);
-        PrintWriter print=new PrintWriter(write);
+        FileWriter fw=new FileWriter(Fl,true);
         String nombre,dir,correo;
             if (!Fl.exists()) {
                 Fl.createNewFile();
@@ -144,8 +143,8 @@ public class Metodos {
         System.out.print("Introduzca su correo: ");
         correo=sc.nextLine();
 
-            print.print(nombre+"; "+dir+"; "+correo+"\n");
-            print.close();
+            fw.write(nombre+"; "+dir+"; "+correo+"\n");
+            fw.close();
         } catch (Exception e) {
         }
     }

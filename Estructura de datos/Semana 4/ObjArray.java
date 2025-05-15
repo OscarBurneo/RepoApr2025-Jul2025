@@ -1,5 +1,9 @@
+import Librerias.All.MetArray;
+
 public class ObjArray{
     public static void main (String[] args){
+        MetArray met =new MetArray();
+        byte op=0;
         do {
             op=met.menu();
             switch (op) {
