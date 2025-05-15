@@ -1,7 +1,6 @@
 package Librerias.All;
 
 import java.util.Scanner;
-
 public class MetArray {
     Scanner sc;
     int[] arreglo;
@@ -100,4 +99,29 @@ public class MetArray {
             System.out.println("No se puede insertar más datos");
         }
     }
+
+    public int binaria (int num,int ini, int fin){
+        if (ini<=fin){
+            int medio=(ini+fin)/2;
+            if (num==arreglo[medio]){
+                return medio;
+            }else if (num>arreglo[medio]){
+                return binaria(num,ini,medio+1);
+            }else{
+                return binaria(num,medio-1,fin);
+            }
+        }
+        return -1;
+    }
+    public void busBinaria(){
+        int num=LeerDato();
+        int resp=binaria(num,0,ev-1);
+        if (resp!=-1) {
+            System.out.println("El numero "+num+" se encuentra en la posicion: "+resp);
+        }else{
+            System.out.println("No existe el numero "+num);
+        }
+    }
+
+    
 }

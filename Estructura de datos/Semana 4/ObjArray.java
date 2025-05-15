@@ -1,10 +1,5 @@
-import Librerias.All.MetArray;
-
-public class Arreglo {                  
-    public static void main(String[] args) {
-        byte op=0;
-        MetArray met= new MetArray();
-
+public class ObjArray{
+    public static void main (String[] args){
         do {
             op=met.menu();
             switch (op) {
@@ -28,6 +23,5 @@ public class Arreglo {
                     break;
             }
         } while (op!=0);
-
     }
 }
