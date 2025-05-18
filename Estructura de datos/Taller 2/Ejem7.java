@@ -10,7 +10,7 @@ public class Ejem7 {
         
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 20; j++) {
-                clase[i][j]=random.nextDouble(10);
+                clase[i][j]=random.nextDouble(5,10);
             }
         }
         System.out.println("\nLa media de cada Alumno: ");
@@ -32,5 +32,13 @@ public class Ejem7 {
             System.out.println(df.format(sum/20));
             sum=0;
         }
+
+        System.out.print("\nLa media de la clase: ");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 20; j++) {
+                sum+=clase[i][j];
+            }
+        }
+        System.out.println(df.format(sum/80)+"\n");
     }
 }
