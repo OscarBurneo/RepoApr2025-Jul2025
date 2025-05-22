@@ -1,6 +1,5 @@
 import java.io.*;
 
-
 public class Ejem1 {
     public static void main(String[] args) {
         File archive= new File("Deudas.txt");
@@ -12,7 +11,6 @@ public class Ejem1 {
             BufferedReader br= new BufferedReader(fr);
             PrintWriter pw= new PrintWriter(fw);
             
-            
             while((line=br.readLine())!=null){
                     String lineUpdate = line.replace("Central de Riesgo", "Liberado");
                    
@@ -20,7 +18,6 @@ public class Ejem1 {
                     pw.flush();
                      
                 }
-    
                 System.out.println("\nArchivo actualizado creado como: DeudasActualizado.txt\n");
                 br.close();
                 pw.close();
@@ -29,5 +26,3 @@ public class Ejem1 {
         }
     }
 }
-
-

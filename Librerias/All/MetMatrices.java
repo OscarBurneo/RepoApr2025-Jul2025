@@ -52,4 +52,26 @@ public class MetMatrices {
         }
 
     }
+    public static void mostMatriz(int n,int m,int v[][]){
+        int i;
+        System.out.print("|-----|");
+
+        String signo="-----|";
+        for ( i = 0; i < n-1; i++) {
+            System.out.print(signo);
+        }
+        System.out.println();
+        for ( i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.printf("|%4d ", v[i][j]);
+            }
+            System.out.println("|");
+            System.out.print("|-----|");
+            for ( int t = 0; t < n-1; t++) {
+                System.out.print(signo);
+            }
+            System.out.println();
+
+        }
+    }
 }

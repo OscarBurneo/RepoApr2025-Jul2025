@@ -35,5 +35,6 @@ public class Proyect01 {
 
         libreta.estado(prom);
 
+        System.out.println(cedula1);
     sc.close();}
 }

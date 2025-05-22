@@ -74,14 +74,25 @@ public class Ejem9 {
     }
 
     public static void elegirAsiento(String[][]asientos){
-        int fila,columna;
-        boolean correcto=false;
-        System.out.println("Elija el asiento que desea: ");
+        int fila=0,columna=0;
+        boolean correcto=false,agreed=false;
         while (!correcto) {
-            System.out.print("Fila: ");
-            fila=sc.nextInt();
-            System.out.print("Columna: ");
-            columna=sc.nextInt();
+            while (!agreed) {
+                System.out.println("---------------------------------------------");
+                System.out.println("Elija el asiento que desea: ");
+                System.out.print("Fila: ");
+                fila=sc.nextInt();
+                System.out.print("Columna: ");
+                columna=sc.nextInt();
+                if (fila>asientos.length||columna>asientos[0].length) {
+                    System.out.println("El asiento no existe.");
+                    agreed=false;
+                }else{
+                    agreed=true;
+                }
+                
+            }
+            agreed=false;
             if (asientos[fila-1][columna-1]=="X") {
                 System.out.println("El asiento ya esta ocupado.");
                 System.out.println("¿Es su asiento?[S/N]");
@@ -93,10 +104,19 @@ public class Ejem9 {
                         correcto=true;
                         asientos[fila-1][columna-1]="-";
                         System.out.println("El asiento ha sido liberado.");
+                    }else if (respuesta2.equals("N")) {
+                        correcto=false;
+                        System.out.println("El asiento ha sido liberado.");
+                    }else{
+                        correcto=false;
+                        System.out.println("Respuesta no valida.");
                     }
                 }else if (respuesta.equals("N")) {
                     correcto=false;
                     System.out.println("\nElija otro asiento:");
+                }else{
+                    correcto=false;
+                    System.out.println("Respuesta no valida.");
                 }
             }else{
                 correcto=true;
@@ -104,6 +124,7 @@ public class Ejem9 {
             }
         }
         System.out.println("El asiento ha sido reservado.");
+        System.out.println("---------------------------------------------");
         estadoAsientos(asientos);
     }
 }
