@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class Ejem8 {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        int n,m=1;
+        int n,m=1,x=0;
         String dia;
         boolean correct=false;        
 
-        System.out.println("Total de clientes: ");
+        System.out.print("Total de clientes: ");
         n=sc.nextInt();
         sc.nextLine();
         String[] clientes=new String[n];
@@ -68,7 +68,7 @@ public class Ejem8 {
                 }
                 }
             }
-
+            System.out.println("---------------------------------------------");
         }
 
         for (int i = 0; i < n; i++) {
@@ -80,19 +80,27 @@ public class Ejem8 {
             }
         }
 
+        System.out.print("----------------------------------------------------------------------------------------");
 
         System.out.printf("%n %-10s %10s %12s %12s %12s %12s %12s %n","Cliente ","lunes","martes","miercoles","jueves","viernes","sábado");
         for (int i = 0; i < n; i++) {
             System.out.printf("%n %-10s %10s %12s %12s %12s %12s %12s %n",clientes[i],registro[i][0],registro[i][1],registro[i][2],registro[i][3],registro[i][4],registro[i][5]);
         }
+        System.out.println("----------------------------------------------------------------------------------------");
+
+        System.out.println("\nClientes que asistieron 3 o más veces: ");
         
         for (int i = 0; i < n; i++) {
-            for (int k = 0; k < registro.length; k++) {
-                if (registro[i][k]!="-") {
-                    
-                }    
+            x=0;
+            for (int k = 0; k < 6; k++) {
+                if (registro[i][k]=="X") {
+                    x++;
+                }
             }
-            
+            if (x>=3) {
+                System.out.println(clientes[i]);
+            }
         }
+        System.out.println();
     sc.close();}
 }
