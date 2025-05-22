@@ -6,6 +6,10 @@ public class Ejem1 {
         File archiveUpdate= new File("DeudasActualizado.txt");
         String line;
         try {
+        if (!archiveUpdate.exists()) {
+                archiveUpdate.createNewFile();
+        }
+        
             FileReader fr= new FileReader(archive);
             FileWriter fw= new FileWriter(archiveUpdate);
             BufferedReader br= new BufferedReader(fr);
