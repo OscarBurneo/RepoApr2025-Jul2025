@@ -12,6 +12,10 @@ public class ListaEnlazada {
                     metodos.insertar();
                 case 2 ->
                     metodos.recorrer();
+                case 3 ->
+                    metodos.buscar();
+                case 0 ->
+                    System.out.println("Saliendo del programa...");
             }
         } while (opc != 0);
 

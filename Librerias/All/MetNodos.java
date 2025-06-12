@@ -19,6 +19,7 @@ public class MetNodos {
         System.out.println("\nMenu Principal");
         System.out.println("[1] Insetar");
         System.out.println("[2] Recorrer");
+        System.out.println("[3] Buscar");
         System.out.println("[0] Salir");
         return sc.nextInt();
     }
@@ -64,5 +65,44 @@ public class MetNodos {
             actual = actual.siguiente;
         }
         System.out.println("null");
+    }
+    public boolean secuencial(int valor) {
+        Nodo actual = head;
+        while (actual != null) {
+            if (actual.valor == valor) {
+                return true;
+            }
+            actual = actual.siguiente;
+        }
+        return false;
+    }
+
+    public void buscar(){
+        int valor= leerDato();
+        if (secuencial(valor)) {
+            
+        }
+    }
+    public void eliminar() {
+        int valor = leerDato();
+        if (listaVacia()) {
+            System.out.println("La lista esta vacia");
+        } else if (valor == head.valor) {
+            head = head.siguiente;
+            System.out.println("Valor eliminado: " + valor);
+        } else{
+            Nodo actual = head;
+            while (actual.siguiente != null&& actual.siguiente.valor != valor) {
+                actual = actual.siguiente;
+                
+                    if (actual.siguiente == null) {
+                System.out.println("Valor no encontrado");
+                    } 
+                    System.out.println("Valor eliminado: " + actual.valor);
+                    return;
+                }
+                actual = actual.siguiente;
+            
+        }
     }
 }

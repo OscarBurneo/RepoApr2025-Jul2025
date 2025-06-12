@@ -28,6 +28,7 @@ public class Ejemplos {
             System.out.print("Sobresliente");
         }
         System.out.println("\n");
+        System.out.println(nombre);
     }
     public void  provincias(){
         String[] provincias = new String[9];
