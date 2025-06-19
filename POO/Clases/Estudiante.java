@@ -1,10 +1,12 @@
 package POO.Clases;
 
-import java.io.Serializable;
+
 import java.util.Scanner;
 
-public class Estudiante implements Serializable {
+public class Estudiante extends Persona {
     public static Scanner sc = new Scanner(System.in);
+    private int expediente;
+    
     private String nombre;
     private int ciclo;
     private String [] materias;
@@ -14,6 +16,16 @@ public class Estudiante implements Serializable {
     private int NumAprob;
     private int NumReprob;
 
+    public Estudiante(String nombre, int ciclo, int dni, int expediente){
+        super(nombre, ciclo, dni);
+        this.expediente = expediente;
+    }
+    @Override
+    public String toString() {
+        return "Estudiante{" + super.toString() + ", expediente=" + expediente + '}';
+    }
+
+    
     public Estudiante(String nombre, int ciclo, int materia) {
         this.nombre = nombre;
         this.ciclo = ciclo;
@@ -54,8 +66,6 @@ public class Estudiante implements Serializable {
         }
         setNotas(notas);
     }
-
-
 
     public void setNombre(String nombre) {
         this.nombre = nombre;

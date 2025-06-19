@@ -1,26 +1,27 @@
 package POO.Clases;
 
-import java.io.Serializable;
 
-public class Persona implements Serializable {
+public class Persona  {
     private String nombre;
     private int edad;
-    private transient int dni;
+    private int dni;
     private String correo;
     
     //constructor 1
     public Persona(){}
     
     //constructor 2
-    public Persona(String nombre){
+    public Persona(String nombre, int edad, int dni){
         this.nombre=nombre;
+        this.dni=dni;
+        this.edad=edad;
     }
     //constructor 3
-    public Persona(String nombre1, int edad1, int dni1, String correo1){
-        this.nombre=nombre1;
-        this.dni=dni1;
-        this.edad=edad1;
-        this.correo=correo1;
+    public Persona(String nombre, int edad, int dni, String correo){
+        this.nombre=nombre;
+        this.dni=dni;
+        this.edad=edad;
+        this.correo=correo;
     }
     
     public void MostrarDatos(){
@@ -68,7 +69,7 @@ public class Persona implements Serializable {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", dni=" + dni + ", correo=" + correo + '}';
+        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", dni=" + dni +'}';
     }
     
 }
