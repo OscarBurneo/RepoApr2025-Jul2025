@@ -1,0 +1,3 @@
+¿Cómo implementarías un sistema de daño donde un Arco sea débil contra Dragón pero fuerte contra Esqueleto?
+
+Atraves de el uso de condicionales para comparar el atributo que le corresponde al arma con el atributo asigando al enemigo que corresponde a la resitencia y vulerabilidad.

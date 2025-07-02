@@ -1,0 +1,3 @@
+¿Cómo diseñarías el método asignarCuidador() para que un Veterinario solo atienda animales enfermos?
+
+utilizando los atributos asignados tanto al cuidador como al animal buscando a traves de los habitats establecidos
