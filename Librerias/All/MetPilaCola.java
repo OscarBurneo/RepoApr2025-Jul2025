@@ -1,7 +1,6 @@
 package Librerias.All;
 
 import java.util.Scanner;
-
 import Librerias.All.Nodos.Nodo;
 
 public class MetPilaCola {
@@ -28,7 +27,6 @@ public class MetPilaCola {
         return sc.nextInt();
     }
     public boolean pilaVacia() {
-
         return pila == null;
     }
     public void pushPila(){

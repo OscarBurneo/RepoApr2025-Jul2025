@@ -8,10 +8,10 @@ public class Arboles {
             op=met.menu();
             switch (op) {
                 case 1:
-                    met.insertar();
+                    //met.insertar();
                     break;
                 case 2:
-                    met.recorrer();
+                    //met.recorrer();
                     break;
                 case 0:
                     System.out.println("Saliendo del programa.");

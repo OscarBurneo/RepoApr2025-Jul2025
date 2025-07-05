@@ -1,0 +1,14 @@
+Realice un programa en JAVA que permita importar información de estudiantes (Id, nombre, y promedio) desde un 
+Arreglo Unidimensional (nombre: Aula; Tipo: Alumno; Campos: Id, nombre, sexo, nota1, nota2, nota3) hacia dos Árboles de Búsqueda Binaria (uno para cada sexo). 
+
+    NO utilizar métodos como ArrayList<> o LinkedLIst<> u otros prediseñados en la elaboración del trabajo.
+    Contar con una clase adecuada para llenar el Arreglo Unidimensional (Clase Alumno)
+    Contar con un tipo de nodo adecuado para ser utilizado por los árboles (Clase Nodo)
+    Crearse dos árboles para el almacenamiento de información (arbolm y arbolh uno por cada sexo)
+    Presentar reportes de aprobación (promedio >= 7) o reprobación (promedio < 7), según el sexo (leídos desde cada uno de los árboles).
+    La presentación deberá tener una primera página carátula, identificando a los estudiantes, paralelo, etc.
+    Cada una de las clases deberá ser identificada con el título de la misma en NEGRITAS.
+    El tipo de letra del código será COURIER NEW de tamaño 11 y debidamente identado y ordenado.
+    El interlineado en el código debe ser exacto 12 pto.
+    Para los puntos 6, 7 y 8 por favor considere como ejemplo la plantilla adjunta 
+
