@@ -58,6 +58,7 @@ public class MetNodos {
            tail = nuevo;
         }
     }
+
     public void recorrer() {
         Nodo actual = head;
         while (actual != null) {
@@ -66,6 +67,7 @@ public class MetNodos {
         }
         System.out.println("null");
     }
+
     public boolean secuencial(int valor) {
         Nodo actual = head;
         while (actual != null) {

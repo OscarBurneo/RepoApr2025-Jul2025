@@ -1,0 +1,13 @@
+{
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.explorer.showNonJavaResources": true,
+    "java.project.sourcePaths": [
+        ".",
+        "Estructura de datos/Semana 2",
+        "Prog. Orient. Objet"
+    ],
+    "java.project.referencedLibraries": [
+        "/home/oscar/Descargas/sqlite-jdbc-3.50.3.0.jar"
+    ]
+}

@@ -7,7 +7,7 @@ public class Arreglo {
 
         do {
             op=met.menu();
-            switch (op) {
+            switch (op) { 
                 case 1:
                     System.out.println("Insertar completo");
                     met.insOrden();
