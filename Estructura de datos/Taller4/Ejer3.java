@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-
-import Thing.*;
+import Librerias.All.Taller4.*;
 
 public class Ejer3 {
     public static void main(String[] args) {

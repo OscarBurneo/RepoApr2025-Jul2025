@@ -1,4 +1,4 @@
-import Thing.Nodo;
+
 class nodo extends Nodo {
     int valor;
     nodo izquierda, derecha;

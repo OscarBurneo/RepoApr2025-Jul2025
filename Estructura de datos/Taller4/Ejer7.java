@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-import Thing.Lista;
+import Librerias.All.Taller4.*;
 public class Ejer7{
     public static void main(String[] args) {
         Lista met = new Lista();

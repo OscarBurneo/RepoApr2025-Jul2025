@@ -1,9 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-import Thing.Nodo;
-import Thing.Lista;
-
+import Librerias.All.Taller4.*;
 public class Ejer6 {
     public static void main(String[] args) {
         Lista list1 = new Lista();
